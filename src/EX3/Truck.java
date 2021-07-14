@@ -25,10 +25,10 @@ public class Truck extends Car{
     @Override
     public double getSalePrice(){
         if (weigth>=2000){
-            return this.getRegularPrice();
+            return this.getRegularPrice()-this.getRegularPrice()/10;
         }
+        return this.getRegularPrice()-this.getRegularPrice()/5;
         
-        return ;
     }
      
     

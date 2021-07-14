@@ -18,7 +18,7 @@ public class Car {
     }
    
     public double getSalePrice(){
-        return 1;
+        return this.regularPrice;
     }
 
     public Car(int speed, double regularPrice, String color) {
