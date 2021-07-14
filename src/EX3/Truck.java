@@ -9,6 +9,27 @@ package EX3;
  *
  * @author van hieu
  */
-public class Truck {
+public class Truck extends Car{
+     private int  weigth;
+
+    public Truck() {
+    }
+
+    public Truck(int weigth) {
+        super();
+        this.weigth = weigth;
+    }
+    
+  
+    
+    @Override
+    public double getSalePrice(){
+        if (weigth>=2000){
+            return this.getRegularPrice();
+        }
+        
+        return ;
+    }
+     
     
 }
